@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">reminder_app</string>
+    <string-array name="options">
+        <item>Dont repeat</item>
+        <item>Repeat hourly</item>
+        <item>Repeat daily</item>
+        <item>Repeat weekly</item>
+    </string-array>
+</resources>

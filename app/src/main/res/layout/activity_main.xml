@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ReminderActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/alarm_bg"
+        android:layout_above="@id/tv_rem_time"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_rem_time"
+        android:text="No reminder!"
+        android:textSize="23sp"
+        android:textColor="#000"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set reminder"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bt_set_rem"
+        android:textSize="13sp"
+        android:layout_below="@id/tv_rem_time"
+        android:layout_centerHorizontal="true"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel reminder"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:id="@+id/bt_cancel_rem"
+        android:layout_below="@id/bt_set_rem"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
